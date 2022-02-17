@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <a id="leaderboard" onclick="elementHider('View Highscores')">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+            </i></a>
+        <span class="header-span">Time: <span id="timer"></span></span>
+    </header>
+    <main>
+        <div class="container " id="containerId1">
+            <div class="content">
+                <h1>Coding Quiz Challange</h1>
+                <p>Try to answer to following code-related questions within the time limit.</p>
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds.</p>
+                <button class="quiz-button" onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+        </div>
+
+        <div class="container hide-div" id="containerId2">
+            <div class="content">
+                <h2 id="quiz-que"></h2>
+                <div id="options"></div>
+                <div id="result"></div>
+            </div>
+
+        </div>
+
+        <div class="container hide-div" id="containerId3" style="height:270px; width: 360px ">
+            <div class="content" id="content-id">
+                <h2 id="submit-h2">All Done!</h2>
+                <p>Your final score is <span id="submit-span"></span></p>
+                <span id="submit-span2"></span>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
